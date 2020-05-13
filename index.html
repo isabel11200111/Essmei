@@ -5,6 +5,7 @@
     <title>Essmei</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaq.css">
+    <script type="text/javascript" src="jquery.js"></script>
   </head>
   <body>
 
@@ -38,13 +39,16 @@
     <a href="#" class="show-filters">Show Filters</a>
     <ul class="filters-list">
       <li>
-        <a href="Bandanas.html" class="selected">Bandanas</a>
+        <a href="#" class="selected" data-filter=".product">All</a>
       </li>
       <li>
-        <a href="Accessories.html">Accessories</a>
+        <a href="Bandanas.html" data-filter=".bandanas">Bandanas</a>
       </li>
       <li>
-        <a href="Bags.html">Bags</a>
+        <a href="Accessories.html" data-filter=".accessories">Accessories</a>
+      </li>
+      <li>
+        <a href="Bags.html" data-filter=".bags">Bags</a>
       </li>
     </ul>
   </div>
@@ -53,7 +57,7 @@
 <section class="products">
   <div class="container">
 
-    <div class="product">
+    <div class="product accessories">
       <div class="overlay">
         <h4>Pocket Square</h4>
         <p>$40</p>
@@ -61,7 +65,7 @@
       <img src="assets/image_1.jpg" alt="">
     </div>
 
-    <div class="product">
+    <div class="product bandanas">
       <div class="overlay">
         <h4>Bandana</h4>
         <p>$60</p>
@@ -69,7 +73,7 @@
       <img src="assets/image_2.jpg" alt="">
     </div>
 
-    <div class="product">
+    <div class="product accessories">
       <div class="overlay">
         <h4>Neckerchief</h4>
         <p>$30</p>
@@ -77,7 +81,7 @@
       <img src="assets/image_3.jpg" alt="">
     </div>
 
-    <div class="product">
+    <div class="product bags">
       <div class="overlay">
         <h4>Bracelette </h4>
         <p>$20</p>
@@ -85,7 +89,7 @@
       <img src="assets/image_4.jpg" alt="">
     </div>
 
-    <div class="product">
+    <div class="product bags">
       <div class="overlay">
         <h4>Waist Square</h4>
         <p>$20</p>
@@ -93,7 +97,7 @@
       <img src="assets/image_5.jpg" alt="">
     </div>
 
-    <div class="product">
+    <div class="product bandana">
       <div class="overlay">
         <h4>Face</h4>
         <p>$30</p>
@@ -102,5 +106,7 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript" src="selections.js"></script>
   </body>
 </html>
